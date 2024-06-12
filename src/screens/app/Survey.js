@@ -65,13 +65,13 @@ export default function Survey() {
 
     const surveyStarted = () => {
         setStartSurvey(true)
-        setTime(2)
+        setTime(7)
     }
     const nextSurvey = () => {
         if (questionIndex < surveyItem.surveyQuestions.length) {
             setQuestionIndex(questionIndex + 1)
             setStartSurvey(true)
-            setTime(2)
+            setTime(7)
         }
 
         if (submitSurvey) {
