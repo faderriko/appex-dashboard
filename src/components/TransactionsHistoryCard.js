@@ -6,6 +6,7 @@ import { Chip, Divider } from '@mui/joy';
 
 import { useAtom } from 'jotai';
 import { completedSurveys } from "../state";
+import { Paid } from '@mui/icons-material';
 
 
 export default function TransactionsHistoryCard() {
@@ -34,7 +35,7 @@ export default function TransactionsHistoryCard() {
                                             </Typography>
                                             <div>
                                                 <Typography align="left">Earned</Typography>
-                                                <Chip color='primary' variant="outlined" align="left" level="title-lg">
+                                                <Chip startDecorator={<Paid/>} color='primary' variant="outlined" align="left" level="title-lg">
                                                     Ksh {item.earnedAmount}
                                                 </Chip>
                                             </div>
