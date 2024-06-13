@@ -133,7 +133,7 @@ export default function Survey() {
                         </Typography>
                     </Grid>
                     {
-                        submitSurvey
+                        surveyComplete
                             ?
                             <div></div>
                             :
