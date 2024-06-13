@@ -9,6 +9,7 @@ import Tabs from '../../components/ResponsiveAppBar'
 import { useAtom } from 'jotai';
 import { completedSurveys } from "../../state";
 import { userLoggedIn } from "../../state";
+import AlertCard from '../../components/AlertCard';
 
 export default function Home() {
   const navigate = useNavigate()
@@ -60,11 +61,11 @@ export default function Home() {
 
   return (
     <div>
-      <Tabs/>
+      <Tabs />
       <HomeCard />
       <Card sx={{ mt: 5 }} variant="soft">
         <Typography align="left" level="title-lg">
-          Surveys For You Today</Typography>
+          Surveys For You Today <AlertCard sx={{ml:1}}message={"Surveys are automaticaly filtered based on you location"} /> </Typography>
         {
           surveysFiltered.length > 1 ?
             <div>
