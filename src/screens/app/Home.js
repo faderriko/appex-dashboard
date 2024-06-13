@@ -65,7 +65,7 @@ export default function Home() {
       <HomeCard />
       <Card sx={{ mt: 5 }} variant="soft">
         <Typography align="left" level="title-lg">
-          Surveys For You Today <AlertCard sx={{ml:1}}message={"Surveys are automaticaly filtered based on you location"} /> </Typography>
+          Surveys For You Today <AlertCard sx={{ml:1}}message={"Surveys are automaticaly filtered based on your location"} /> </Typography>
         {
           surveysFiltered.length > 1 ?
             <div>
