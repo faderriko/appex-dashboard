@@ -31,7 +31,7 @@ export default function SurveyStartCard(props) {
     return (
         <div>
             <Card size="sm" sx={{ mt: 3 }}>
-                <Typography fontWeight={"bold"}>You are about to take Bloom survey. you were prequalified for this survey
+                <Typography fontWeight={"bold"}>You are about to take Appex survey. you were prequalified for this survey
                     and will earn
                     <Typography variant="outlined"
                         color="primary"

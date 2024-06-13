@@ -65,13 +65,13 @@ export default function Survey() {
 
     const surveyStarted = () => {
         setStartSurvey(true)
-        setTime(7)
+        setTime(5)
     }
     const nextSurvey = () => {
         if (questionIndex < surveyItem.surveyQuestions.length) {
             setQuestionIndex(questionIndex + 1)
             setStartSurvey(true)
-            setTime(7)
+            setTime(5)
         }
 
         if (submitSurvey) {
@@ -142,7 +142,7 @@ export default function Survey() {
                                     startSurvey
                                         ?
                                         <Grid xs={6} md={6}>
-                                            <Typography
+                                            <Typography align="left"
                                                 level="title-lg" >
                                                 <Chip size="lg" variant="outlined" color="primary" startDecorator={<Timer />}>
                                                     Next In : {time}
