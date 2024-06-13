@@ -12,7 +12,6 @@ import Tabs from '../../components/ResponsiveAppBar'
 
 export default function Withdraw() {
   const navigate = useNavigate()
-  const [amount, setAmount] = React.useState(0)
   const [amountError, setAmountError] = React.useState(false)
   const [showProgressDialog, setProgressDialog] = useState(false);
 

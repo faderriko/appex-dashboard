@@ -14,9 +14,9 @@ export default function Survey() {
 
     const [user, setUser] = useAtom(userObject)
     const [surveyCount, setSurveyCount] = useAtom(surveyValidation)
-    const [doneSurveys, setDoneSurveys] = useAtom(completedSurveys)
-    const [amountList, setAmountList] = useAtom(amountEarnedList)
-    const [days, setDays] = useAtom(weekDaysList)
+    const [, setDoneSurveys] = useAtom(completedSurveys)
+    const [, setAmountList] = useAtom(amountEarnedList)
+    const [, setDays] = useAtom(weekDaysList)
 
     const [surveyItem, setSurveyItem] = useState([]);
     const [startSurvey, setStartSurvey] = useState(false)
@@ -76,7 +76,7 @@ export default function Survey() {
 
         if (submitSurvey) {
             var dateNow = new Date().toLocaleDateString()
-            var weekDay = new Date().toLocaleString('en-us', {weekday:'short'})
+            var weekDay = new Date().toLocaleString('en-us', { weekday: 'short' })
             setDoneSurveys((survey) => [
                 ...survey, {
                     date: dateNow,
@@ -84,12 +84,12 @@ export default function Survey() {
                     surveyId: surveyItem.surveyId
                 }
             ])
-            
-            setAmountList((item)=>[
+
+            setAmountList((item) => [
                 ...item, surveyItem.surveyAmount
             ])
 
-            setDays((item)=>[
+            setDays((item) => [
                 ...item, weekDay
             ])
             setUser((prev) => ({

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from "react-router-dom";
 import SelectedPackageDetails from '../../components/SelectedPackageDetails'
-import { Alert, Button, Card, Container, Divider, Grid, LinearProgress, Textarea, Typography } from '@mui/joy'
+import { Alert, Button, Card, Divider, Grid, LinearProgress, Textarea, Typography } from '@mui/joy'
 import Modal from '@mui/joy/Modal';
 import ModalDialog from '@mui/joy/ModalDialog';
 import DialogTitle from '@mui/joy/DialogTitle';

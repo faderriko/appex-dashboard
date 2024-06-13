@@ -6,7 +6,7 @@ import ListItem from '@mui/joy/ListItem';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import Typography from '@mui/joy/Typography';
 import Check from '@mui/icons-material/Check';
-import { Button, IconButton } from '@mui/joy';
+import { IconButton } from '@mui/joy';
 import { CopyAll } from '@mui/icons-material';
 
 export default function HowToPayCard(props) {

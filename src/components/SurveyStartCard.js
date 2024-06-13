@@ -2,14 +2,11 @@ import * as React from 'react';
 import { useNavigate } from "react-router-dom";
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
-import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
 import { Divider } from '@mui/material';
 
-import { useAtom } from 'jotai';
-import { userObject } from "../state";
-import { Alert, Box, Chip, Container, Grid, IconButton } from '@mui/joy';
-import { Paid, Stars } from '@mui/icons-material';
+import { Alert, Box, Grid } from '@mui/joy';
+import { Paid } from '@mui/icons-material';
 
 import feather from '../assets/feather.png'
 
