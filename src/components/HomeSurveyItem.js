@@ -97,7 +97,7 @@ export default function HomeSurveyItem(props) {
             <Modal open={open} onClose={() => setOpen(false)}>
                 <ModalDialog>
                     <DialogTitle>{message}</DialogTitle>
-                    <DialogContent>Upgrade your account to access more surveys and earn more</DialogContent>
+                    <DialogContent>Upgrade your account to access this and more surveys and earn more</DialogContent>
                     <form
                         onSubmit={(event) => {
                             event.preventDefault();
@@ -106,7 +106,7 @@ export default function HomeSurveyItem(props) {
                         }}
                     >
                         <Stack spacing={2}>
-                            <Button type="submit">View Packages</Button>
+                            <Button type="submit">UPGRADE ACCOUNT</Button>
                         </Stack>
                     </form>
                 </ModalDialog>
