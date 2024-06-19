@@ -42,7 +42,7 @@ export default function ReferralCard() {
                         aria-label="Explore Bahamas Islands"
                         sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
                     >
-                        Copy Link
+                        Copy Code
                     </Button>
                     }
                     sx={{

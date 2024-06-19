@@ -121,7 +121,7 @@ export default function ProfileCard() {
                         aria-label="Explore Bahamas Islands"
                         sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
                     >
-                        Take Surveys
+                        Surveys
                     </Button>
                 </CardContent>
                 <Divider />

@@ -4,6 +4,7 @@ import { atomWithStorage } from "jotai/utils"
 export const userObject = atomWithStorage('user', {
     firstName: "",
     lastName: "",
+    education: "",
     email: "",
     password: "",
     referralCode: "",
